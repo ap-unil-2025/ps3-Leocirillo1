@@ -46,11 +46,11 @@ def analyze_numbers(numbers):
         return None
 
     analysis = {
-        "Count":len(numbers),
-        "Sum":sum(numbers),
-        "Average": sum(numbers)/len(numbers),
-        "Minimum": min(numbers),
-        "Maximum": max(numbers),
+        "count":len(numbers),
+        "sum":sum(numbers),
+        "average": sum(numbers)/len(numbers),
+        "minimum": min(numbers),
+        "maximum": max(numbers),
         "Even numbers" : len([x for x in numbers if x % 2 == 0]) ,
         "Odd numbers": len([x for x in numbers if x % 2 == 1]) ,
     }
