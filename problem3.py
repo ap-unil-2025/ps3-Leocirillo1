@@ -14,11 +14,11 @@ def get_numbers_from_user():
     numbers = []
 
     while True:
-        askNumber=input("Enter a number: ")
-        if askNumber=="done":
+        asknumber=input("Enter a number: ")
+        if asknumber=="done":
             break
         try:
-            numbers.append(float(askNumber))
+            numbers.append(float(asknumber))
         except ValueError:
             print("Please enter a number of type 'done' to quit")
 
@@ -51,7 +51,7 @@ def analyze_numbers(numbers):
         "Average": sum(numbers)/len(numbers),
         "Minimum": min(numbers),
         "Maximum": max(numbers),
-        "Even numbers": len([x for x in numbers if x % 2 == 0]) ,
+        "Even numbers" : len([x for x in numbers if x % 2 == 0]) ,
         "Odd numbers": len([x for x in numbers if x % 2 == 1]) ,
     }
     return analysis
